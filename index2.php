@@ -1,6 +1,8 @@
 <?php
 $text = $_GET['words'];
-
+$censured = $_GET['censured'];
+$censuredText = str_replace($censured, '***', $text);
+$censuredTextLen = strlen($censuredText)
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,11 +18,12 @@ $text = $_GET['words'];
     <div>
         <h3>Testo Originale</h3>
         <p><?php echo $text ?></p>
-        <div><?php echo strlen($text) ?></div>
+        <div>Lunghezza: <?php echo strlen($text) ?></div>
     </div>
     <div>
         <h3>Testo Censurato</h3>
-        <p></p>
+        <p><?php echo $censuredText ?></p>
+        <div>Lunghezza: <?php echo $censuredTextLen ?></div>
     </div>
 </body>
 

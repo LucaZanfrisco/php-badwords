@@ -11,7 +11,7 @@
 <body>
     <form action="index2.php" methods="GET">
         <div>
-            <textarea name="words" id="words" cols="50" rows="1"></textarea>
+            <textarea name="words" id="words" cols="50" rows="5"></textarea>
         </div>
         <label for="censured">Parola da censurare</label>
         <input type="text" name="censured" id="censured">
