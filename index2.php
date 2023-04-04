@@ -1,9 +1,10 @@
 <?php
-$text = $_GET['words'];
-$censured = $_GET['censured'];
-$censuredText = str_replace($censured, '***', $text);
-$censuredTextLen = strlen($censuredText)
+    $text = $_GET['words'];
+    $censured = $_GET['censured'];
+    $censuredText = str_replace($censured, '***', $text);
+    $censuredTextLen = strlen($censuredText);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
